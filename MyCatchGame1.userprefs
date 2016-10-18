@@ -2,26 +2,22 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GameMgr.cs">
     <Files>
-      <File FileName="Assets\Scripts\GameMgr.cs" Line="85" Column="4" />
-      <File FileName="Assets\Scripts\Pad.cs" Line="13" Column="9" />
-      <File FileName="Assets\Scripts\Player.cs" Line="78" Column="30" />
+      <File FileName="Assets\Scripts\GameMgr.cs" Line="115" Column="5" />
+      <File FileName="Assets\Scripts\Pad.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Player.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Util.cs" Line="1" Column="1" />
       <File FileName="d:\Documents\UnityProject\MyCatchGame1\Assets\Scripts\Token.cs" Line="1" Column="1" />
       <File FileName="d:\Documents\UnityProject\MyCatchGame1\Assets\Scripts\TokenMgr.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\TitleMgr.cs" Line="26" Column="1" />
-      <File FileName="Assets\Scripts\Goal.cs" Line="39" Column="1" />
-      <File FileName="Assets\Scripts\FieldMgr.cs" Line="38" Column="2" />
+      <File FileName="Assets\Scripts\TitleMgr.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Goal.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FieldMgr.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State>
-          <Value>field;</Value>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="Assets\Scripts\GameMgr.cs" line="98" offsetX="648" offsetY="1358" expression="min" liveUpdate="False" />
+    <Watch file="Assets\Scripts\GameMgr.cs" line="99" offsetX="640" offsetY="1372" expression="max" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
 </Properties>

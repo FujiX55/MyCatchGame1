@@ -59,6 +59,7 @@ public class GameMgr : MonoBehaviour
 
 			cam = GameObject.Find("Main Camera") as GameObject;
 
+			// カメラの座標をプレイヤに追従させる
 			Vector3 pos = cam.transform.position;
 			pos.x = player_.X;
 			cam.transform.position = pos;
@@ -90,12 +91,29 @@ public class GameMgr : MonoBehaviour
 		if (player_ != null)
 		{
 			Vector3 pos = cam.transform.position;
+			Vector3 bak = pos;
 			pos.x = player_.X;
 
-			if (( pos.x + cam.transform.localScale.x < field.right )
-			&&  ( pos.x - cam.transform.localScale.x > field.left ))
+			Camera camCompo = cam.GetComponent<Camera>();
+
+			cam.transform.position = pos;
+
+			Vector2 min = Camera.main.ViewportToWorldPoint(Vector2.zero);
+			Vector2 max = Camera.main.ViewportToWorldPoint(Vector2.one);
+
+			// カメラの座標をプレイヤに追従させる
+			if (( max.x < field.right )
+			&&  ( min.x > field.left ))
+//			if (( pos.x + camCompo.orthographicSize*2 < field.right )
+//			&&  ( pos.x - camCompo.orthographicSize*2 > field.left ))
+//			if (( pos.x + cam.transform.localScale.x < field.right )
+//			&&  ( pos.x - cam.transform.localScale.x > field.left ))
 			{
-				cam.transform.position = pos;
+//				cam.transform.position = pos;
+			}
+			else
+			{
+				cam.transform.position = bak;
 			}
 		}
 
