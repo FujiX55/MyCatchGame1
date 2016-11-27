@@ -4,12 +4,15 @@ using System.Collections;
 public class GameMgr : MonoBehaviour 
 {	
 	// 状態
-	enum eState
+	public enum eState
 	{
 		Main,		// メイン
 		StageClear,	// ステージクリア
 		GameOver	// ゲームオーバー
 	}
+
+	// 状態
+	public eState _state = eState.Main;
 
 	// 現在のステージ番号
 	public int nStage = 1;
@@ -156,9 +159,6 @@ public class GameMgr : MonoBehaviour
 		}
 	}
 
-	// 状態
-	eState _state = eState.Main;
-	
 	// マップをロードする
 	void Load(int stage)
 	{

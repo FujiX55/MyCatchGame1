@@ -38,16 +38,24 @@ public class Goal : Token
 		// レイヤ名を取得
 		string name = LayerMask.LayerToName (other.gameObject.layer);
 
-//		if (name == "Player")
-//		{
-//			// ステージクリア
+		if (name == "Doctor")
+		{
+			// ステージクリア
 //			Player p = other.gameObject.GetComponent<Player>();
-//	
-//			// ステージクリア状態を設定する
+	
+			// ステージクリア状態を設定する
 //			p.SetGameState(Player.eGameState.StageClear);
-//
-//			// プレイヤ消滅
+
+			// プレイヤ消滅
 //			p.Vanish();
-//		}
+
+			GameObject obj = GameObject.Find("GameMgr") as GameObject;
+
+			obj.GetComponent<GameMgr>()._state = GameMgr.eState.StageClear;
+
+			// プレイヤ消滅
+			obj = GameObject.Find("Player") as GameObject;
+			obj.GetComponent<Player>().Vanish();
+		}
 	}
 }

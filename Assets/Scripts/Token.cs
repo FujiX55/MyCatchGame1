@@ -159,6 +159,15 @@ public class Token : MonoBehaviour
     RigidBody.velocity = v;
   }
 
+	/// 移動量を加算(X/Y).
+	public void AddVelocityXY (float vx, float vy)
+	{
+		Vector2 v;
+		v.x = vx;
+		v.y = vy;
+		RigidBody.velocity += v;
+	}
+
   /// 移動量をかける.
   public void MulVelocity (float d)
   {

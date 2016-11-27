@@ -43,6 +43,11 @@ public class Pad {
 		return push_;
 	}
 
+    /// 戻るボタンを検出する
+    public bool IsEscape() {
+        return Input.GetKeyDown( KeyCode.Escape );
+    }
+
 	public void Update()
 	{
 		push_ = false;

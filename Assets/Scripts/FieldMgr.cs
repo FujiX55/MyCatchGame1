@@ -95,8 +95,14 @@ public class FieldMgr
 					break;
 
 				case CHIP_FLOOR_MOVE:
-					// 移動床を作成
-					FloorMove.Add(x, y);
+//					// 移動床を作成
+//					FloorMove.Add(x, y);
+					{
+						// ハカセを移動させる
+						GameObject obj = GameObject.Find("Doctor") as GameObject;
+						Doctor doctor = obj.GetComponent<Doctor>();
+						doctor.SetPosition(x, y);
+					}
 					break;
 
 				case CHIP_GOAL:

@@ -84,12 +84,12 @@ public class Player : Token
 		if 		(VX <= -1.0f)
 		{	
 			_bFacingLeft = true;
-			GravityScale = 0.1f;
+//			GravityScale = 0.1f;
 		}			// 左を向く
 		else if (VX >=  1.0f)	
 		{	
 			_bFacingLeft = false;
-			GravityScale = 0.1f;
+//			GravityScale = 0.1f;
 		}			// 右を向く
 		else
 		{
@@ -169,7 +169,9 @@ public class Player : Token
 
 		if (obj != null)
 		{
-			obj.SetActive (false);
+//			Doctor doc = obj.GetComponent<Doctor>();
+//			doc.Vanish();
+////		obj.SetActive (false);
 		}
 	}
 
